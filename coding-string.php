@@ -1,1 +1,5 @@
-Hello! I'm a new php file.
+<?php
+function redactInfo($string){
+echo "$string info is not yet redacted";
+}
+;
