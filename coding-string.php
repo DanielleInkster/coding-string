@@ -1,5 +1,11 @@
 <?php
-function redactInfo($string){
-echo "$string info is not yet redacted";
+
+function contains($str, $sensitive_data= array("Card Num", "Exp", "CVV"))
+{
+    foreach($sensitive_data as $data) {
+        if (stripos($str,$data) !== false) echo "{$data} found!";
+    }
 }
+
+
 ;
